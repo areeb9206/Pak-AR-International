@@ -1,0 +1,76 @@
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--green:#145b18;--deep:#0d4212;--gold:#b88b2d;--ink:#20231f;--muted:#687068;--cream:#f7f8f2}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:"DM Sans",Arial,sans-serif;color:var(--ink);line-height:1.65;background:#fff}
+a{color:inherit;text-decoration:none}
+.site-header{height:84px;padding:10px 7%;display:flex;align-items:center;justify-content:space-between;background:#fff;position:sticky;top:0;z-index:20;box-shadow:0 2px 16px #172b1710}
+.brand img{width:76px;height:64px;object-fit:contain}
+.nav{display:flex;align-items:center;gap:27px;font-size:13px;font-weight:700}
+.nav a{transition:color .2s}.nav a:hover{color:var(--green)}
+.nav-contact{background:var(--green);color:#fff!important;padding:10px 19px;border-radius:3px}
+.menu-toggle{display:none;border:0;background:none;font-size:25px;color:var(--green)}
+.hero{min-height:570px;position:relative;display:flex;align-items:center;padding:75px 10%;overflow:hidden;background:#f5f4eb}
+.hero-image{position:absolute;inset:0 0 0 42%;background:linear-gradient(90deg,#f5f4eb 0%,#f5f4eb22 48%),url("assets/eco-planting.jpg") center/cover}
+.hero-content{position:relative;z-index:1;max-width:540px}
+.eyebrow{font-size:11px;letter-spacing:2.5px;font-weight:800;color:var(--gold);display:block;margin-bottom:13px}
+.eyebrow.green{color:var(--green)}
+h1{font-size:clamp(42px,6vw,76px);line-height:1.05;letter-spacing:-3px;color:var(--green);font-weight:800}
+h1 span{display:block;color:var(--gold);font-size:.72em;letter-spacing:1px;margin-top:10px}
+.hero-content>p{font-size:18px;color:#52584e;margin:24px 0 30px}
+.button{display:inline-flex;gap:22px;align-items:center;background:var(--green);color:#fff;padding:14px 22px;font-size:13px;font-weight:700;border-radius:3px}
+.button span{font-size:20px}
+.hero-mark{position:absolute;bottom:28px;left:10%;font-size:11px;background:var(--green);color:#fff;padding:4px 12px;border-radius:2px}
+.section{padding:95px 10%}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:center}
+h2{font-size:clamp(30px,4vw,46px);line-height:1.15;letter-spacing:-1.5px;margin-bottom:22px}
+.about-copy p,.commitment-copy p{font-size:15px;color:var(--muted);margin:0 0 15px;max-width:560px}
+.about-photo{height:380px;border-radius:5px 70px 5px 5px;overflow:hidden}
+.about-photo img{width:100%;height:100%;object-fit:cover}
+.services{background:var(--cream)}
+.section-heading{text-align:center;max-width:620px;margin:0 auto 48px}
+.section-heading p{color:var(--muted);font-size:14px}
+.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.service-card{background:#fff;padding:26px 21px;min-height:190px;border-bottom:3px solid var(--green);box-shadow:0 8px 30px #1b3a1508}
+.service-card>span{font-size:12px;color:var(--gold);font-weight:800}
+.service-card h3{font-size:17px;line-height:1.3;margin:20px 0 10px}
+.service-card p{font-size:13px;color:var(--muted)}
+.client-strip{margin-top:65px;text-align:center}
+.client-strip>p{font-size:11px;letter-spacing:2px;color:var(--muted);font-weight:800;margin-bottom:24px}
+.client-logos{display:flex;align-items:center;justify-content:center;gap:38px;flex-wrap:wrap}
+.client-logos img{max-width:115px;max-height:50px;object-fit:contain}
+.featured-products{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.featured-products img{width:100%;height:250px;object-fit:cover;border-radius:4px;background:#f2f2ed}
+.product-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-top:18px}
+.product-gallery img{width:100%;height:190px;object-fit:cover;border-radius:3px;background:#f2f2ed;transition:transform .25s}
+.product-gallery img:hover{transform:translateY(-4px)}
+.commitment{background:var(--green);color:#fff;display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:center}
+.commitment-image{height:360px;overflow:hidden;border-radius:4px 60px 4px 4px}
+.commitment-image img{width:100%;height:100%;object-fit:cover}
+.commitment-copy .eyebrow{color:#e2c37b}
+.commitment-copy h2{color:#fff}
+.commitment-copy p{color:#e1e9df}
+.lifecycle{background:#fbfcf8}
+.cycle{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 auto 50px;max-width:1000px}
+.cycle div{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;max-width:140px}
+.cycle b{width:48px;height:48px;border:1px solid #a9bca3;border-radius:50%;display:grid;place-items:center;color:var(--green);font-size:14px}
+.cycle strong{font-size:13px;color:var(--green)}
+.cycle small{font-size:11px;color:var(--muted)}
+.cycle i{font-style:normal;color:var(--gold);font-size:23px}
+.standards{max-width:850px;margin:auto;padding:28px 32px;background:#fff;border-left:4px solid var(--gold)}
+.standards h3{color:var(--green);font-size:18px;margin-bottom:12px}
+.standards ul{padding-left:18px;color:#626c60;font-size:13px}
+.contact{background:#f1f2e9;display:grid;grid-template-columns:.8fr 1.2fr;gap:10%;align-items:start}
+.contact-intro h2{color:var(--green)}
+.contact-intro p{color:var(--muted);font-size:14px}
+.contact-details{display:grid;grid-template-columns:1fr 1fr;gap:28px 35px}
+.contact-details span{font-size:10px;letter-spacing:2px;font-weight:800;color:var(--gold)}
+.contact-details p{font-size:13px;line-height:1.8;margin-top:7px;overflow-wrap:anywhere}
+.contact-details a:hover{color:var(--green);text-decoration:underline}
+footer{padding:32px 7%;display:flex;align-items:center;justify-content:space-between;gap:20px;background:#fff}
+footer img{width:60px;height:52px;object-fit:contain}
+footer p{font-size:12px;font-weight:700;color:var(--green)}
+footer small{font-size:11px;color:var(--muted)}
+@media(max-width:900px){.nav{gap:14px;font-size:12px}.section{padding:75px 7%}.service-grid{grid-template-columns:repeat(2,1fr)}.product-gallery{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:640px){.site-header{height:72px;padding:7px 5%}.brand img{width:65px;height:56px}.menu-toggle{display:block}.nav{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;padding:18px 6% 24px;box-shadow:0 12px 15px #00000012;flex-direction:column;align-items:stretch;gap:0}.nav.open{display:flex}.nav a{padding:12px 4px;border-bottom:1px solid #eef0e9}.nav .nav-contact{margin-top:10px;text-align:center;border:0}
+.hero{min-height:550px;padding:75px 7%;align-items:flex-start}.hero-image{inset:0;background:linear-gradient(90deg,#f5f4eb 0%,#f5f4ebd9 52%,#f5f4eb55 100%),url("assets/eco-planting.jpg") center/cover}.hero-mark{left:7%}
+.section{padding:65px 7%}.about,.commitment,.contact{grid-template-columns:1fr;gap:32px}.about-photo{height:260px;grid-row:1}.about-copy p,.commitment-copy p{font-size:14px}.section-heading{margin-bottom:32px}.service-grid{grid-template-columns:1fr 1fr;gap:11px}.service-card{padding:20px 15px;min-height:185px}.service-card h3{font-size:15px}.client-logos{gap:24px}.client-logos img{max-width:85px;max-height:42px}.featured-products{grid-template-columns:1fr 1fr;gap:10px}.featured-products img{height:180px}.product-gallery{grid-template-columns:1fr 1fr;gap:9px}.product-gallery img{height:160px}.commitment-image{height:250px;grid-row:1}.cycle{display:grid;grid-template-columns:1fr 1fr;gap:18px}.cycle i{display:none}.cycle div{margin:auto}.standards{padding:22px 18px}.contact-details{grid-template-columns:1fr;gap:17px}footer{padding:25px 7%;flex-wrap:wrap;justify-content:center;text-align:center;gap:10px}footer img{width:50px;height:45px}footer p,footer small{width:100%}}
