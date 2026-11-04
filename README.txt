@@ -1,8 +1,7 @@
-AR International — Final Static Website
-Domain: https://arinternational.store
+AR INTERNATIONAL - FINAL WEBSITE
 
-Files: index.html, style.css, script.js, favicon.png, apple-touch-icon.png, assets/
-
-Deployment: Extract the ZIP and upload its CONTENTS directly to the domain document root (e.g., public_html) on your hosting. Open https://arinternational.store/ after DNS and hosting are configured.
-
-The logo, photographs and client marks were extracted from the supplied AR International PDF. No third-party product images are required. The font uses Google Fonts with Arial fallback.
+Upload ALL files and the assets folder into the domain's public_html directory.
+The supplied logo is used for header, footer, browser favicon, and social preview.
+SEO includes canonical URL, metadata, structured data, robots.txt and sitemap.xml.
+After publishing, submit https://arinternational.store/sitemap.xml in Google Search Console.
+SEO does not guarantee Google ranking or immediate indexing.
